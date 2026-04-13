@@ -1,62 +1,51 @@
-# DSA 210 Project Proposal: Analysis of Global Cuisines and Climate
+# Analysis of Global Cuisines and Climate: The Ingredient Correlation
 
 **Term:** Spring 2025-2026  
 **Student:** Yağmur Ögetman  
+**Course:** DSA 210 - Introduction to Data Science
 
 ---
 
 ## 1. Motivation and Objective
-The fundamental motivation of this project is to explore how climate, as a primary environmental architect, shapes the **"Culinary DNA"** of nations. Human culture is most visceral in gastronomy, which is often dictated by cultivable crops and physiological adaptations to environmental stressors.
+The fundamental motivation of this project is to explore how climate, as a primary environmental architect, shapes the **"Culinary DNA"** of nations. Instead of focusing on subjective flavor profiles, this research investigates the direct correlation between environmental stressors and the **specific ingredients** used in traditional dishes.
 
-This research aims to investigate whether a country's climate metrics—specifically **average temperature, precipitation, and humidity**—have a statistically measurable effect on its traditional flavor profiles and macronutrient preferences.
+Human gastronomy is often dictated by cultivable crops and local biodiversity. This project aims to bridge the gap between environmental science and food sociology by analyzing whether climate metrics (temperature, precipitation, humidity) statistically dictate the presence of specific ingredient groups (e.g., specific grains, tubers, proteins, or preservative agents).
 
----
+## 2. Data Acquisition and Methodology
+The dataset is integrated from three primary dimensions:
 
-## 2. Data Acquisition and Collection Methodology
-The data for this study will be integrated from three primary sources:
+* **Global Culinary Data:** Scraped from **TasteAtlas** and curated from **Kaggle Global Recipe Datasets**, covering **60+ countries** with 20-30 representative dishes per nation.
+* **Climate Metrics (2000-2024):** National climate data retrieved from **The World Bank Climate Change Knowledge Portal (CCKP)** and the **Climatic Research Unit (CRU)**.
+* **Ingredient Mapping:** Ingredients are extracted and categorized to identify correlations with specific climate zones (Köppen-Geiger Classification).
 
-* **Global Culinary Data:** Traditional dish data for **60+ countries** will be obtained from **TasteAtlas** (via web scraping) and existing **Kaggle Global Recipe Datasets**. I will target the top 20–30 representative dishes per nation.
-* **Climate Metrics:** National climate data will be retrieved from **The World Bank Climate Change Knowledge Portal (CCKP)** and the **Climatic Research Unit (CRU)**. To ensure historical relevance to traditional recipes, I will use mean climate data from the **2000–2024 period**.
-* **Data Augmentation via AI:** Since raw recipe datasets often lack standardized scores for sensory attributes, I will use **Gemini (LLM)** to annotate the dataset. The model will assign scores (1-5) for **"Spiciness," "Sweetness,"** and **"Caloric Density"**.
+## 3. Data Characteristics
+The final merged dataset contains approximately **1,200 to 1,800 unique dishes** with the following features:
 
----
-
-## 3. Data Characteristics and Samples
-The final merged dataset will contain approximately **1,200 to 1,800 unique dishes**.
-
-### Feature Set
-| Category | Specific Features |
+| Category | Features |
 | :--- | :--- |
 | **Geographic** | Country Name, Region, Köppen-Geiger Climate Zone |
-| **Climate (2000-2024)** | Mean Annual Temp (°C), Annual Precipitation (mm), **Relative Humidity (%)**, Seasonal Variance |
-| **Flavor Profile** | Spiciness (1-5), Sweetness (1-5), Sourness (1-5), Fermentation (Binary) |
+| **Climate** | Mean Annual Temp (°C), Annual Precipitation (mm), Relative Humidity (%), Seasonal Variance |
+| **Ingredient Data** | Presence of specific Staple Crops (Rice, Wheat, Potato, Maize), Protein Sources, and Preservatives |
 | **Nutritional** | Predominant Macronutrient, Estimated Caloric Density |
 
----
+## 4. Research Hypotheses
+1.  **The Staple Shift:** Significant correlation between mean annual temperature/precipitation and the dominant staple ingredient (e.g., Rice-dominant vs. Wheat-dominant regions).
+2.  **The Caloric Shield:** A negative correlation between annual temperature and the prevalence of fat-rich, calorie-dense ingredients in traditional diets.
+3.  **Preservation Patterns:** Higher relative humidity and seasonal variance correlate with a higher frequency of ingredients known for long shelf-lives or traditional preservation methods.
 
-## 4. Hypotheses
-1.  **The Spice Defense:** A positive correlation between high ambient temperatures/humidity and the usage of antimicrobial spices.
-2.  **The Caloric Shield:** A negative correlation between annual temperature and fat-rich, calorie-dense meal preferences.
-3.  **The Humidity-Fermentation Link:** Higher relative humidity levels correlate with a higher variety of preserved or fermented foods.
+## 5. Machine Learning & Statistical Analysis
+* **Pearson Correlation & Multivariate Regression:** To validate the link between specific climate variables and ingredient frequency.
+* **Decision Tree Classifier:** To predict a country’s dominant ingredient profile based solely on its climate variables.
+* **K-Means Clustering:** To identify natural **"Climate-Gastro Zones"** where distant countries with similar climates share "culinary cousins" in terms of raw ingredients.
 
----
-
-## 5. Machine Learning Implementation
-* **Decision Tree Classifier:** To predict a country's cuisine category based on climate variables.
-* **K-Means Clustering:** To identify natural **"Climate-Gastro Zones"** and compare them with geographic boundaries.
-
----
-
-## 6. Project Structure (Planned)
-* `data/`: Raw and processed CSV files.
-* `plots/`: Heatmaps, Scatter Plots, and Cluster Visualizations.
-* `data_process.ipynb`: Data cleaning, scraping, and merging.
-* `hypothesis_test.ipynb`: Statistical analysis and P-value results.
+## 6. Project Structure
+* `data/`: Raw and processed CSV files containing dish-climate pairs.
+* `plots/`: Visual outputs including Heatmaps, Boxplots (e.g., Rice vs. Potato distributions), and Geographic Clusters.
+* `data_process.ipynb`: Data cleaning, web scraping scripts, and dataset merging.
+* `hypothesis_test.ipynb`: Statistical analysis, P-value results, and correlation matrices.
 * `machine_learning.ipynb`: Clustering and classification models.
 
----
-
 ## 7. AI Usage Disclaimer
-AI (Gemini) is utilized for:
-* **Data Annotation:** Generating flavor/caloric scores where raw data is unstructured.
-* **Code Optimization:** Refining visualization scripts and statistical testing frameworks.
+In this project, AI (Gemini) was utilized for:
+* **Data Structuring:** Assisting in the categorization of unstructured ingredient lists.
+* **Code Optimization:** Refining complex visualization scripts (e.g., Seaborn boxplots/swarmplots) and statistical testing frameworks.
