@@ -7,9 +7,9 @@
 ---
 
 ## 1. Motivation and Objective
-The fundamental motivation of this project is to explore how climate, as a primary environmental architect, shapes the **"Culinary DNA"** of nations. Instead of focusing on subjective flavor profiles, this research investigates the direct correlation between environmental stressors and the **specific ingredients** used in traditional dishes.
+The core motivation of this project is to decode how climate, acting as a primary environmental architect, orchestrates the **"Culinary DNA"** of nations. Moving beyond subjective sensory attributes like flavor, this research conducts a rigorous investigation into the direct correlation between environmental stressors and the specific ingredient profiles that define traditional global cuisines.
 
-Human gastronomy is often dictated by cultivable crops and local biodiversity. This project aims to bridge the gap between environmental science and food sociology by analyzing whether climate metrics (temperature, precipitation, humidity) statistically dictate the presence of specific ingredient groups (e.g., specific grains, tubers, proteins, or preservative agents).
+Human gastronomy is not merely a cultural choice; it is a visceral adaptation to local biodiversity and the constraints of cultivable crops. By analyzing climate metrics—such as temperature, precipitation, and humidity—this project aims to bridge the gap between environmental science and food sociology. The ultimate objective is to provide a statistical framework that determines the extent to which a region's atmospheric conditions dictate the presence of fundamental ingredient groups, including specific grains, tubers, proteins, and traditional preservative agents.
 
 ## 2. Data Acquisition and Methodology
 The dataset is integrated from three primary dimensions:
