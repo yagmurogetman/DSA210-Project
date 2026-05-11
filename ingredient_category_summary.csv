@@ -1,0 +1,8 @@
+Ingredient_Category,Observation_Count,Mapped_Ingredients
+Meat_Based,42,"Beef, Chicken, Duck, Lamb, Meat, Meatballs, Minced Meat, Pork, Sausage, Veal"
+Grain_Based,37,"Rice, Wheat, Bread, Bulgur, Bun, Corn, Corn Flour, Dough, Dumplings, Flour, Maize Flour, Pasta, Pastry, Rice Noodles, Rice Porridge, Rye Bread, Rye Flour, Semolina, Breadcrumbs"
+Vegetable_Based,27,"Beans, Beets, Black Beans, Cabbage, Carrots, Chickpeas, Eggplant, Fries, Kidney Beans, Lentils, Onions, Potato, Potatoes, Root Vegetables, Tomato, Tomato Sauce, Vegetables"
+Spice_Sauce_Based,16,"Allspice, Berbere, Herbs, Lime, Mustard Oil, Paprika, Pepper, Saffron, Salt, Soy Sauce, Spices, Sweet Soy Sauce, Vinegar, Wine, Gravy"
+Dairy_Based,10,"Butter, Cheese, Cheese Curds, Coconut Milk, Cream, Cream Sauce, Yogurt"
+Seafood_Based,9,"Fish, Herring, Hilsa Fish, Mussels, Raw Fish, Salted Cod, Seafood, Cuttlefish Ink"
+Egg_Based,3,"Egg, Eggs"
