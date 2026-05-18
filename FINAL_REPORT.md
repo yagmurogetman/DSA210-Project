@@ -84,7 +84,7 @@ The purpose of this addition is not to force a significant result, but to handle
 ## 7. Machine Learning Results
 **Commit ID:** 823da14
 
-This commit represents the Machine Learning / Method part of the project completed and submitted on May 5, 2026.
+This commit represents the Machine Learning / Method part of the project completed for the Milestone 2 deadline on May 5, 2026. The milestone2 tag was missed at the time, so this commit ID is provided to document the corresponding May 5 project version.
 
 The machine learning task predicts whether rice appears as a main ingredient using three climate variables: temperature, humidity, and precipitation.
 
