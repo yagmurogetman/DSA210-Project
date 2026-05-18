@@ -129,4 +129,4 @@ The notebooks should be run in this order:
 4. `ingredient_category_analysis.ipynb`
 5. `ML_Method.ipynb`
 
-The required Python packages are listed in `requirements.txt`.
+The required Python packages are listed in `requirements.txt`. 
