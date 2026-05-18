@@ -82,6 +82,9 @@ Welch tests were also calculated for category-level comparisons across temperatu
 The purpose of this addition is not to force a significant result, but to handle the sparsity problem more responsibly and show that the project recognizes the limitation of individual ingredient counts.
 
 ## 7. Machine Learning Results
+**Commit ID:** 823da14
+
+This commit represents the Machine Learning / Method part of the project completed and submitted on May 5, 2026.
 
 The machine learning task predicts whether rice appears as a main ingredient using three climate variables: temperature, humidity, and precipitation.
 
